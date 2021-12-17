@@ -1,16 +1,16 @@
 package com.com.myapp.user;
 
 public class UserVO {
-	private int seq;
+	private int sid;
 	private String userid;
+	private String password;
 	private String username;
-	private String regdate;
 	
-	public int getSeq() {
-		return seq;
+	public int getSid() {
+		return sid;
 	}
-	public void setSeq(int seq) {
-		this.seq = seq;
+	public void setSid(int sid) {
+		this.sid = sid;
 	}
 	public String getUserid() {
 		return userid;
@@ -24,10 +24,11 @@ public class UserVO {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public String getRegdate() {
-		return regdate;
+	public String getPassword() {
+		return password;
 	}
-	public void setRegdate(String regdate) {
-		this.regdate = regdate;
+	public void setPassword(String password) {
+		this.password = password;
 	}
+
 }
