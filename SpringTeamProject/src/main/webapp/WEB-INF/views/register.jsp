@@ -29,6 +29,8 @@ button {
 </head>
 <body>
 	<div style='width: 100%; text-align: center; padding-top: 100px'>
+		<img src='./img/bid.gif' height="500">
+		<br>
 		<form method="post" action="registerUser">
 			<div>
 				<label>아이디: </label><input type='text' name='userid' />

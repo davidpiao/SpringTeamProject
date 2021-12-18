@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BoardDAO">
+
+<insert id="insertBoard">
+	insert into NEWBOARD(category,current,max,seller,material)
+	values (#{category},#{current},#{max},#{seller},#{material})
+</insert>
+
+<delete id="deleteBoard">
+	delete from NEWBOARD where sid = #{sid}
+</delete>
+
+<update id="updateBoard">
+	update NEWBOARD
+	set current=#{current}, previous=#{previous}, buyer=#{buyer}
+</update>
+
+<select id="getBoard" resultType="board">
+	select * from NEWBOARD where sid=#{sid}
+</select>
+
+<select id="getBoardList" resultType="board">
+	select * from NEWBOARD order by sid desc
+</select>
+
+</mapper>

@@ -46,7 +46,7 @@ public class HomeController {
 		if (loginvo != null) { // 로그인 성공
 			System.out.println("로그인 성공!");
 			session.setAttribute("login", loginvo);
-			returnURL = "redirect:/home";
+			returnURL = "redirect:/posts";
 		} else { // 로그인 실패
 			System.out.println("로그인 실패!");
 			returnURL = "redirect:/";
@@ -83,3 +83,4 @@ public class HomeController {
 		return "redirect:/";
 	}
 }
+

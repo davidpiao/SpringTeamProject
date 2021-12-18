@@ -3,7 +3,7 @@
 <mapper namespace="User">
 
 <select id="getUser" resultType="com.com.myapp.user.UserVO">
-select ID, username from User where ID=#{userid} and password=#{password}
+select ID, Username from User where ID=#{userid} and Password=#{password}
 </select>
 
 <select id="getSid" resultType="com.com.myapp.user.UserVO">
